@@ -19,7 +19,7 @@ class Triangle
       raise TriangleError
   end
     [a, b, c].sort
-  if a[0] + a[1] <= a[2]
+  if a[0] + a[1] < a[2]
       raise TriangleError
     end
   end
