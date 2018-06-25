@@ -12,11 +12,11 @@ class Triangle
     if a + b <= c || a <= 0 || b || 0 || c <= 0
       raise TriangleError
     elsif a == b && b == c
-        :equilateral
-      elsif a == c || b == c || a ==b
-        :isosceles
-      elsif a > 0 && b > 0 && c > 0
-        :scalene
+      :equilateral
+    elsif a == c || b == c || a ==b
+      :isosceles
+    else
+      :scalene
     end
   end
 
