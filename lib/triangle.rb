@@ -13,8 +13,8 @@ class Triangle
       :equilateral
     elsif a == c || b == c || a ==b
       :isosceles
-    elsif a + b > c
-      :scalene
+    # elsif a + b > c
+    #   :scalene
     elsif a + b <= c
       raise TriangleError
     end
