@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    # sorted = [a, b, c].sort
+    sorted = [a, b, c].sort
     if a == b && b == c
       :equilateral
     elsif a == c || b == c || a ==b
