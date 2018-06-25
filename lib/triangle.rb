@@ -13,9 +13,9 @@ class Triangle
       :equilateral
     elsif a == c || b == c || a ==b
       :isosceles
-    elsif a + b >= c
+    elsif a + b > c
       :scalene
-    else 
+    else
       a + b <= c || a <= 0 || b || 0 || c <= 0
         raise TriangleError
     end
