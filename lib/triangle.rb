@@ -16,7 +16,7 @@ class Triangle
     if [a, b, c].any? {|x| x <= 0}
         raise TriangleError
     end
-    
+
     # if a == b && b == c
     #   :equilateral
     # elsif a == c || b == c || a ==b
