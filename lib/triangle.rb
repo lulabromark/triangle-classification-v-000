@@ -17,12 +17,12 @@ class Triangle
         raise TriangleError
     end
 
-    # if a == b && b == c
-    #   :equilateral
-    # elsif a == c || b == c || a ==b
-    #   :isosceles
-    # elsif a + b > c
-    #   :scalene
+    if a == b && b == c
+      :equilateral
+    elsif a == c || b == c || a == b
+      :isosceles
+    else
+      :scalene
 
 
   end
