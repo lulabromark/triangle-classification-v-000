@@ -11,7 +11,7 @@ class Triangle
     sorted = [a, b, c].sort
     if a == b && b == c
       :equilateral
-    elsif a == c && b > 0
+    elsif a == c && b == c
       :isosceles
     end
   end
