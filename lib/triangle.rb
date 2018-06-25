@@ -9,14 +9,14 @@ class Triangle
 
   def kind
     sorted = [a, b, c].sort
-    # if a == b && b == c
-    #   :equilateral
-    # elsif a == c || b == c || a ==b
-    #   :isosceles
-    # elsif a > 0 && b > 0 && c > 0
-    #   :scalene
     if a + b <= c || a <= 0 || b || 0 || c <= 0
       raise TriangleError
+    elsif a == b && b == c
+        :equilateral
+      elsif a == c || b == c || a ==b
+        :isosceles
+      elsif a > 0 && b > 0 && c > 0
+        :scalene
     end
   end
 
