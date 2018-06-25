@@ -18,8 +18,8 @@ class Triangle
   if [a, b, c].any? {|x| x <= 0}
       raise TriangleError
   end
-    [a, b, c].sort
-  if a[0] + a[1] < a[2]
+    sorted = [a, b, c].sort
+  if sorted[0] + sorted[1] < sorted[2]
       raise TriangleError
     end
   end
