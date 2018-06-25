@@ -13,6 +13,9 @@ class Triangle
       :equilateral
     elsif a == c || b == c || a ==b
       :isosceles
+    elsif a > 0 && b > 0 && c > 0
+      :scalene
+      
     end
   end
 end
