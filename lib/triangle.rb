@@ -15,7 +15,7 @@ class Triangle
     #   :isosceles
     # elsif a > 0 && b > 0 && c > 0
     #   :scalene
-    if a + b <= c
+    if a + b <= c || sorted > 0
       raise TriangleError
     end
   end
